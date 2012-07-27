@@ -3,7 +3,7 @@
   "name": "odata-cli",
   "description": "odata client for node.js",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "./index",
   "repository": {
     "type": "git",
     "url": "git://github.com/machadogj/node-odata-cli.git"
