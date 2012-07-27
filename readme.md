@@ -1,0 +1,1 @@
+Port of jquery.OData for using it from node.js (nothing done yet!)
