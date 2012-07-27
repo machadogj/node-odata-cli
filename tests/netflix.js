@@ -8,7 +8,7 @@ describe('netflix odata integration tests', function () {
 			.skip(2)
 			.top(2)
 			.select("Name,Synopsis")
-			.query(function (res) {
+			.query(function (err, res) {
 			    assert.equal(res.d.length, 2);
 			    done();
 			});
@@ -24,7 +24,7 @@ describe('netflix odata integration tests', function () {
 			})
 			.from('Titles')
 			.select("Name,Synopsis")
-			.query(function (res) {
+			.query(function (err, res) {
 			    console.log(res);
 			    assert.equal(res.d.length, 2);
 			    done();
