@@ -1,9 +1,13 @@
 {
   "author": "Gustavo Machado <machadogj@gmail.com> (http://machadogj.com)",
-  "name": "node-odata",
+  "name": "odata-cli",
   "description": "odata client for node.js",
   "version": "0.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/machadogj/node-odata-cli.git"
+  },
   "scripts": {
     "test": "mocha .\\tests\\index.js --reporter spec"
   },

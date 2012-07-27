@@ -1,7 +1,8 @@
+var OData = require('../lib');
 // create odata object
 // first argument is the "service root URI"
-// $.odata(serviceRootURI)
-var odata = $.odata("http://services.odata.org/OData/OData.svc");
+// OData(serviceRootURI)
+var odata = OData("http://services.odata.org/OData/OData.svc");
 
 // basic querying without filtering
 // odata.from("xx") returns a new query object that can be reused

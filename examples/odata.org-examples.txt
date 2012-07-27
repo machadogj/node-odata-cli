@@ -11,7 +11,7 @@ h2. Create the OData Object
 Create a new odata object that points at the 
 http://services.odata.org/OData/OData.svc odata service
 
-bc. var odata = $.odata('http://services.odata.org/OData/OData.svc');
+bc. var odata = require('odata-cli')('http://services.odata.org/OData/OData.svc');
 
 h2. Specifying the Resource Path through the @from@ method
 
