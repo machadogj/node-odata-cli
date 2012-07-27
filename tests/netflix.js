@@ -5,11 +5,23 @@ describe('netflix odata integration tests', function () {
 	it('should query for titles', function ( done ) {
 		OData("http://odata.netflix.com/Catalog")
 			.from('Titles')
-			.skip(2)
+			//.skip(2)
 			.top(2)
-			.select("Name,Synopsis")
+			.select("Id,Name,Synopsis")
 			.query(function (err, res) {
 			    assert.equal(res.d.length, 2);
+			    done();
+			});
+	});
+
+	it('should query with filter for titles', function ( done ) {
+		OData("http://odata.netflix.com/Catalog")
+			.from('Titles')
+			.top(2)
+			.select("Id,Name,Synopsis")
+			.filter("Id eq '13dNq'")
+			.query(function (err, res) {
+			    assert.equal(res.d.length, 1);
 			    done();
 			});
 	});
@@ -31,4 +43,11 @@ describe('netflix odata integration tests', function () {
 			});
 	});
 
+	it('should get a single item', function () { 
+		var q = OData("http://odata.netflix.com/Catalog")
+			.from('Titles')
+			.withId(1234);
+
+		assert.equal("http://odata.netflix.com/Catalog/Titles(1234)", q.uri);
+	});
 });
