@@ -1,0 +1,21 @@
+{
+  "author": "Gustavo Machado <machadogj@gmail.com> (http://machadogj.com)",
+  "name": "node-odata",
+  "description": "odata client for node.js",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha .\\tests\\index.js --reporter spec"
+  },
+  "dependencies": {
+    "request":"*",
+    "node.extend":"*"
+  },
+  "devDependencies": {
+    "mocha":"*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
