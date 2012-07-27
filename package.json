@@ -9,7 +9,6 @@
     "url": "git://github.com/machadogj/node-odata-cli.git"
   },
   "scripts": {
-    "test": "mocha .\\tests\\index.js --reporter spec"
   },
   "dependencies": {
     "request":"*",
