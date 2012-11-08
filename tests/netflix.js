@@ -47,7 +47,6 @@ describe('netflix odata integration tests', function () {
 		var q = OData("http://odata.netflix.com/Catalog")
 			.from('Titles')
 			.withId(1234);
-
-		assert.equal("http://odata.netflix.com/Catalog/Titles(1234)", q.uri);
+		assert.equal("Titles(1234L)", q.uri.segments.resource);
 	});
 });

@@ -2,7 +2,7 @@
   "author": "Gustavo Machado <machadogj@gmail.com> (http://machadogj.com)",
   "name": "odata-cli",
   "description": "odata client for node.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./index",
   "repository": {
     "type": "git",
